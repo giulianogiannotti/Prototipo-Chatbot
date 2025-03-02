@@ -31,9 +31,6 @@ app.add_middleware(
 class QuestionRequest(BaseModel):
     question: str
 
-# Configurar API Token para Replicate
-os.environ["REPLICATE_API_TOKEN"] = "r8_QPBqMUXFLP7iqGUIRIcLIMn42qqRy2l41FGpb"
-
 # Definir el modelo de lenguaje
 llm = Replicate(
     model="meta/llama-2-13b-chat",
